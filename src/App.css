@@ -4,7 +4,7 @@
 
 .card {
   position: relative;
-  width: 40%;
+  width: 80%;
   height: 70%;
   margin: auto;
   margin-bottom: 10px;
@@ -64,7 +64,7 @@
 
 .search-form button {
   margin-left: 10px;
-  width: 30px;
+  width: auto;
   height: 50px;
   width: 30%;
   padding: 5px;

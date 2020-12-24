@@ -70,7 +70,7 @@ function App() {
                 <h4>Live Weather</h4>
                 <div className="weatherIcon">
                   <img
-                    src={`http://openweathermap.org/img/w/${weatherdata.data.weather[0].icon}.png`}
+                    src={`https://openweathermap.org/img/w/${weatherdata.data.weather[0].icon}.png`}
                     alt="imgIcon"
                   />
                 </div>
