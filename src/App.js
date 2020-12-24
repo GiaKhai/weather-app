@@ -13,8 +13,7 @@ function App() {
     try {
       setLoading(true)
       const data = await getWeatherData(city);
-      setWeatherData(data);
-      console.log(data);
+      setWeatherData(data); 
       setLoading(false);
     } catch (error) {
       console.log("False", error);
@@ -77,7 +76,7 @@ function App() {
                 </div>
                 <h4>{weatherdata.data.weather[0].main}</h4>
                 <div className="temperature">
-                  <h2>{weatherdata.data.main.temp}&deg;C</h2>
+                  <h2>{weatherdata.data.main.temp}&deg;K</h2>
                 </div>
                 <div className="location">
                   <h3>
@@ -87,8 +86,8 @@ function App() {
                 </div>
                 <div className="temperature-range">
                   <h5>
-                    {weatherdata.data.main.temp_max}&deg;C -{" "}
-                    {weatherdata.data.main.temp_min}&deg;C{" "}
+                    {weatherdata.data.main.temp_max}&deg;K -{" "}
+                    {weatherdata.data.main.temp_min}&deg;K{" "}
                   </h5>
                   <h5>Humidity: {weatherdata.data.main.humidity}%</h5>
                 </div>
