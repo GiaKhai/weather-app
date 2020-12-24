@@ -32,6 +32,7 @@ function App() {
   margin: 0 auto;
   border-color: red;
   `;
+  
   return (
     <div className="App">
       <div className="card">
